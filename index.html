@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web dev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="home">
+        <div class="hero">
+            <nav class="navbar">
+
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#help">Help</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="overlay">
+                <h1>Bienvenue sur le site de Beni Brice</h1>
+                <p>Développeur passionné & créateur d’idées puissantes</p>
+                <button onclick="alert('Tu peux me contacter ici !')">Me contacter</button>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h2 class="text-center py-3  text-primary-emphasis">
+                Learn to code, build the future. DevHub is the ultimate platform for passionate developers. Whether
+                you're
+                just starting
+                out or already an expert, you'll find tools, resources, tutorials, and a vibrant community to support
+                center your
+                journey. Join
+                thousands of developers who collaborate, grow, and create together. Code. Collaborate. Progress. Your
+                developer journey
+                starts here
+
+            </h2>
+
+
+        </div>
+
+        <div class="container pt-5">
+            <div class="text-center">
+                <h1 class="text-primary-emphasis">
+                    Discover more about us
+                    center </h1>
+            </div>
+        </div>
+
+        <!--  SERVICE SECTION  -->
+
+        <div class="row pt-5">
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+
+                <h1 class="text-center  text-primary-emphasis">
+                    Cybersecurity Services to Safeguard Your Digital World
+                </h1>
+                <p class="pt-3  text-primary-emphasis text-center">
+                    Protect your applications, data, and infrastructure with expert-driven security solutions tailored
+                    to developers and
+                    startups
+                </p>
+
+                <p class="pt-3  text-primary-emphasis text-center mx-3">
+                    Our cybersecurity team helps you detect vulnerabilities, secure your systems, and comply with the
+                    latest security
+                    standards. We provide penetration testing, risk assessment, and ongoing protection to keep your
+                    business safe from cyber
+                    threats
+                </p>
+
+
+            </div>
+
+            <div class="col-12 col-md-6 px-5">
+                <img src="assets/security2.jpg" class="img-fluid rounded shadow-lg w-100 w-md-50 w-lg-25"
+                    alt="Image sécurité" height="200px">
+            </div>
+
+
+
+        </div>
+
+
+        <!-- SECOND CLASS SECTION -->
+
+        <div class="row pt-5">
+            <div class="col-12 col-md-6 px-5">
+                <img src="assets/deploy2.jpg" class="img-fluid rounded shadow-lg w-100 w-md-50 w-lg-2 5"
+                    alt="Image sécurité">
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+
+                <h1 class="text-center  text-primary-emphasis">
+                    Automate, Deploy, and Scale with Cloud & DevOpss
+                </h1>
+                <p class="pt-3  text-primary-emphasis text-center">
+                    Optimize your infrastructure with reliable, automated, and scalable cloud-based solutions
+                </p>
+
+                <p class="pt-3 px-5  text-primary-emphasis text-center mx-3">
+                    We help businesses migrate to the cloud, automate deployment pipelines, and ensure high
+                    availability. Our team uses
+                    tools like Docker, Kubernetes, and CI/CD pipelines to streamline your development process and
+                    minimize downtime
+                </p>
+
+
+            </div>
+        </div>
+
+        <!-- THIRD SERVICE  -->
+
+        <div class="row pt-5 pb-5">
+
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+
+                <h1 class="text-center  text-primary-emphasis">
+                    Scalable Web and Mobile Development Solutions
+                </h1>
+                <p class="pt-3  text-primary-emphasis text-center">
+                    Build robust digital products that are fast, secure, and tailored to your business needs.
+                </p>
+
+                <p class="pt-3 px-5  text-primary-emphasis text-center mx-3">
+                    From landing pages to full-scale platforms, we develop high-performance websites and mobile apps
+                    using modern
+                    frameworks. Our focus is on clean code, responsive design, and seamless user experience.
+                </p>
+
+
+            </div>
+
+            <div class="col-12 col-md-6 px-5">
+                <img src="assets/website.jpg" class="img-fluid rounded shadow-lg w-100 w-md-50 w-lg-2 5"
+                    alt="Image sécurité">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="pt-5 text-center text-primary-emphasis">
+        <h1 class="pb-5">
+            Blog
+        </h1>
+
+        <div class="container px-3 py-3">
+            <div class="row">
+                <!-- Première Carte -->
+                <div class="col-12 col-md-4 mb-4"> <!-- mb-4 pour espacement vertical -->
+                    <div class="card shadow-lg h-100"> <!-- h-100 pour égaliser la hauteur -->
+                        <img src="assets/profil/model1.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Titre</h5>
+                            <p class="card-text">Contenu de la carte.</p>
+                            <a href="#" class="btn btn-primary">Bouton</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deuxième Carte -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card shadow-lg h-100">
+                        <img src="assets/profil/model2.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Titre</h5>
+                            <p class="card-text">Contenu de la carte.</p>
+                            <a href="#" class="btn btn-primary">Bouton</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Troisième Carte -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card shadow-lg h-100">
+                        <img src="assets/profil/model3.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Titre</h5>
+                            <p class="card-text">Contenu de la carte.</p>
+                            <a href="#" class="btn btn-primary">Bouton</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HELP CENTER -->
+
+    <section id="help" class="pt-5  pb-5 text-center text-primary-emphasis">
+        <h1 class="pb-5">
+            Help center
+        </h1>
+
+
+        <div class="row">
+
+
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <p class="pt-3 px-5  text-primary-emphasis text-center mx-3">
+                    Welcome to our Help Center!
+                    We're here to support you every step of the way. Whether you need technical assistance, have
+                    questions about our
+                    services, or are experiencing an issue, our team is ready to help.
+                    Browse our frequently asked questions, reach out to our support team, or explore our documentation
+                    to find the
+                    information you need.
+                    Your satisfaction is our priority — don’t hesitate to contact us for personalized help
+                </p>
+            </div>
+
+            <div class="col-12 col-md-6 px-5">
+                <img src="assets/help.jpg" class="img-fluid rounded shadow-lg w-100 w-md-50 w-lg-2 5"
+                    alt="Image sécurité">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about" class="pt-5 text-center text-primary-emphasis">
+        <h1>
+            About Us
+        </h1>
+
+        <p class="pt-3">
+            We are a passionate team of developers, designers, and tech enthusiasts committed to building innovative
+            digital
+            solutions. Our mission is to empower businesses, entrepreneurs, and developers with high-quality services in
+            software
+            development, cybersecurity, and cloud infrastructure. With a deep understanding of modern technologies and a
+            user-first
+            approach, we strive to turn complex problems into elegant solutions. Whether you're launching a startup,
+            upgrading your
+            digital presence, or securing your systems, we're here to help you succeed in the ever-evolving tech
+            landscape.
+        </p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Beni Brice. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Mentions légales</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Conditions d'utilisation</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+        integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
